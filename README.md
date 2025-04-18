@@ -13,13 +13,6 @@ Features include:
 
 > ⚠️ Currently supports **English ➜ Chinese** only.
 
----
-
-## 📸 Preview
-
-<p align="center">
-  <img src="assets/popup_example.png" width="400" alt="Popup Example">
-</p>
 
 ---
 
