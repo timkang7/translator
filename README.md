@@ -47,7 +47,9 @@ Download the **English to Chinese** model (`translate-en_zh-1_9.argosmodel`) and
 ```bash
 python translator.py
 ```
-
+```bash
+Use this to pack it into an exe: pyinstaller -F --add-data "translate-en_zh-1_9.argosmodel;." translator.py
+```
 ---
 
 ## 🧠 How It Works
