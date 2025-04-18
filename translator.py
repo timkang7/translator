@@ -14,12 +14,9 @@ import pystray
 from pystray import MenuItem as item
 from PIL import Image, ImageDraw
 
-# 获取程序所在目录（支持 .exe 和 .py 运行）
 if getattr(sys, 'frozen', False):
-    # 如果是打包后的 .exe 文件，获取 .exe 所在目录
     base_path = os.path.dirname(sys.executable)
 else:
-    # 如果是 .py 文件，获取脚本所在目录
     base_path = os.path.dirname(os.path.abspath(__file__))
 # Load offline translation model
 # model_path = "E:\\my_translator\\translate-en_zh-1_9.argosmodel"
@@ -124,7 +121,7 @@ def listen_shortcut():
 
     def on_press(key):
         current_keys.add(key)
-        print(f"[KEY DOWN] {key}, currently pressed: {current_keys}")  # <-- 调试输出
+        print(f"[KEY DOWN] {key}, currently pressed: {current_keys}")  # <-- debug
 
         if (any(k in current_keys for k in [keyboard.Key.ctrl_l, keyboard.Key.ctrl_r]) and
                 any(k in current_keys for k in [keyboard.Key.alt_l, keyboard.Key.alt_r]) and
