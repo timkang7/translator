@@ -104,8 +104,4 @@ After showing the first translation, the app minimizes and runs silently in the 
 - [ ] More elegant popup window
 - [ ] Support for more languages
 
----
 
-## 📃 License
-
-MIT License
