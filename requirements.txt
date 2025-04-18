@@ -1,0 +1,8 @@
+argostranslate
+pyperclip
+pyautogui
+pyttsx3
+pynput
+eng-to-ipa
+pystray
+pillow
