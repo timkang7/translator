@@ -1,5 +1,106 @@
-# translator
-A local light translator(English &amp; Chinese), which can translate word with phonetic symbol and can read loud.
-Please download the translator model from this websit：
-https://www.argosopentech.com/argospm/index/
-Only support translate from English to Chinese yet.
+🔤 Local English-Chinese Translator
+A lightweight offline translator for English to Chinese.
+Features include:
+
+🌐 Offline Translation using Argos Translate
+
+🔊 Text-to-Speech playback (English)
+
+🔡 IPA Phonetic Transcription
+
+📋 Translate selected text via Ctrl + Alt + T
+
+📌 Neat popup near the cursor for quick translation
+
+🧊 Runs silently in system tray after startup
+
+⚠️ Currently supports English ➜ Chinese only.
+
+📸 Preview
+<p align="center"> <img src="assets/popup_example.png" width="400" alt="Popup Example"> </p>
+🚀 Getting Started
+1. Clone the Repo
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/local-translator.git
+cd local-translator
+2. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Or manually install:
+
+bash
+Copy
+Edit
+pip install argostranslate pyttsx3 pyperclip pynput pyautogui pystray eng_to_ipa
+3. Download the Translation Model
+Go to Argos Translate model repository
+Download the English to Chinese model (translate-en_zh-1_9.argosmodel) and place it in the same folder as the script.
+
+4. Run the Translator
+bash
+Copy
+Edit
+python translator.py
+🧠 How It Works
+On startup, the app shows a sample translation.
+
+It minimizes to the tray.
+
+Whenever you press Ctrl + Alt + T, the app:
+
+Copies your selected text
+
+Translates it from English to Chinese
+
+Converts it to IPA
+
+Shows a popup with all results
+
+Optionally reads the English text aloud
+
+⌨️ Hotkey
+Translate selection: Ctrl + Alt + T
+Make sure to first select some English text in any app or browser.
+
+📦 Dependencies
+Argos Translate
+
+pyttsx3 (for TTS)
+
+pyautogui (get mouse position + copy)
+
+pyperclip (clipboard handling)
+
+pynput (hotkey listener)
+
+pystray (system tray)
+
+eng_to_ipa (IPA conversion)
+
+tkinter (built-in GUI)
+
+📌 Notes
+Only supports English ➜ Chinese for now
+
+IPA may not cover complex phrases accurately
+
+Some TTS voices may vary depending on OS
+
+🧊 Tray Mode
+After showing the first translation, the app minimizes and runs silently in the tray. Right-click the tray icon to exit.
+
+🛠️ Todo
+ Add Chinese ➜ English support
+
+ User-configurable hotkey
+
+ More elegant popup window
+
+ Support for more languages
+
+📃 License
+MIT License
