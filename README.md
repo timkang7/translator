@@ -43,12 +43,13 @@ Go to [Argos Translate model repository](https://www.argosopentech.com/argospm/i
 Download the **English to Chinese** model (`translate-en_zh-1_9.argosmodel`) and place it in the same folder as the script.
 
 ### 4. Run the Translator
-
+Run it directly:
 ```bash
 python translator.py
 ```
+Or use this to pack it into an exe:
 ```bash
-Use this to pack it into an exe: pyinstaller -F --add-data "translate-en_zh-1_9.argosmodel;." translator.py
+ pyinstaller -F --add-data "translate-en_zh-1_9.argosmodel;." translator.py
 ```
 ---
 
